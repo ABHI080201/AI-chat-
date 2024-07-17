@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { FaTwitter } from "react-icons/fa";
+import { FaPhoenixFramework } from "react-icons/fa";
 
 import ColorUtils from "@/base/colors";
 
@@ -25,7 +26,7 @@ const Splash = () => {
         style={{ backgroundColor: ColorUtils.colors.black }}
       >
         <div className="p-3 rounded-full z-40">
-          <FaTwitter size={60} color={ColorUtils.colors.white} />
+          <FaPhoenixFramework size={60} color={ColorUtils.colors.white} />
         </div>
       </div>
     </div>

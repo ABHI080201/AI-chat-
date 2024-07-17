@@ -2,6 +2,7 @@ import { Fragment, useEffect } from "react";
 
 import { formatDistanceToNowStrict } from "date-fns";
 import { BsTwitter } from "react-icons/bs";
+import { FaPhoenixFramework } from "react-icons/fa";
 
 import useCurrentUser from "@/hooks/useCurrentUser";
 import useNotifications from "@/hooks/useNotifications";
@@ -24,7 +25,10 @@ const NotificationFeed = () => {
                 key={notification.id}
                 className="flex items-center px-4 py-3 border-b border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800"
               >
-                <BsTwitter className="w-6 h-6 mr-4 text-blue-500" />
+                <FaPhoenixFramework
+                  className="w-6 h-6 mr-4 text-blue-500"
+                  color="#00ffff"
+                />
                 <div className="flex flex-col flex-1">
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     <span className="text-gray-600 dark:text-gray-300">

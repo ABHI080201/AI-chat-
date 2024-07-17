@@ -52,12 +52,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <SessionProvider session={pageProps.session}>
         <Head>
-          <link
-            rel="shortcut icon"
-            href="https://abs.twimg.com/favicons/twitter.3.ico"
-            type="image/x-icon"
-          />
-          <title>{pageTitle ? `${pageTitle} / Aichats ` : "Aichats"}</title>
+          <link rel="shortcut icon" href="/phenix.ico" type="image/x-icon" />
+          <title>{pageTitle ? `${pageTitle} / Fowl ` : "Fowl"}</title>
           <meta
             name="description"
             content="This is a Aichat app where you can share the updates about ai tech in it"

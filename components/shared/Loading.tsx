@@ -2,7 +2,7 @@ import { RiLoader5Line } from "react-icons/ri";
 
 import ColorUtils from "@/base/colors";
 
-const Loading = () => {
+const Bottomtitleitle = () => {
   return (
     <div
       className="
@@ -37,4 +37,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default Bottomtitleitle;

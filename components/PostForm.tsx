@@ -118,7 +118,7 @@ const PostForm: FC<IPostFormProps> = ({
       {!isLoggedIn ? (
         <div className="flex flex-col justify-center">
           <h1 className="text-2xl text-white font-bold text-center mt-5">
-            Welcome to Twitter
+            Welcome to Fowl
           </h1>
           <div className="text-white flex justify-center gap-4 p-5 border-b-[1px] border-neutral-800">
             <div className="py-2">
