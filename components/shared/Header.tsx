@@ -50,7 +50,7 @@ const Header: FC<IHeaderProps> = ({
         <h1 className="text-xl font-bold text-white">{label}</h1>
         {isProfilePage ? (
           <h3 className="text-sm text-neutral-500">
-            {activeUser?.userTwitCount} Tweets
+            {activeUser?.userTwitCount} Quill
           </h3>
         ) : null}
         {isFollowPage ? (

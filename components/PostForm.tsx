@@ -185,7 +185,7 @@ const PostForm: FC<IPostFormProps> = ({
               </div>
               <Button
                 disabled={loading || !body.trim() || body.length > 100}
-                label="Tweet"
+                label="Quill"
                 onClick={handleSubmit}
                 size="custom"
                 labelSize="base"

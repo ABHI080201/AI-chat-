@@ -162,7 +162,7 @@ const TweetModal: FC<IPostFormProps> = ({ username }) => {
 
                 <Button
                   disabled={loading || !body || body.length > 100}
-                  label="Tweet"
+                  label="Quill"
                   size="custom"
                   labelSize="base"
                   onClick={handleSubmit}

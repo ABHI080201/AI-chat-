@@ -67,7 +67,7 @@ const Sidebar = () => {
             <SidebarLogo />
             <RenderSidebarItems />
             <Button
-              label="Tweet"
+              label="Quill"
               fullWidth
               size="md"
               showShareButton

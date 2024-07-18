@@ -91,7 +91,7 @@ const UserInfo: FC<IUserInfoProps> = ({ username }) => {
             labelWeight="semibold"
             hoverEnabled={isFollowing}
             hoverText={isFollowing ? "Unfollow" : ""}
-            hoverBgColor="hover:bg-white"
+            hoverBgColor="hover:!bg-custom-redHover "
             hoverTextColor="hover:!text-custom-red"
             hoverBorderColor="hover:!border-custom-redHover"
             onClick={toggleFollow}

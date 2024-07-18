@@ -73,67 +73,66 @@ const Button: FC<IButtonProps> = ({
   const { width } = useWindowSize();
   const [hover, setHover] = useState(false);
 
-  const styles = [
-    `
-                ${fullWidth ? "w-full" : "w-fit"}
-                rounded-3xl
-                ${
-                  secondary
-                    ? ButtonUtils.styles.secondary
-                    : btnBlack
-                    ? `${ButtonUtils.styles.blackBtn} ${hoverOpacity}`
-                    : ButtonUtils.styles.primary
-                }
-             
-                ${
-                  (size === "custom" &&
-                    ButtonUtils.buttonSizes.customButtonStyle) ||
-                  (size === "sm" && ButtonUtils.buttonSizes.smStyle) ||
-                  (size === "md" && ButtonUtils.buttonSizes.mdStyle) ||
-                  (size === "lg" && ButtonUtils.buttonSizes.lgStyle)
-                }
+  // const styles = [
+  //   `
+  //               ${fullWidth ? "w-full" : "w-fit"}
+  //               rounded-3xl
+  //               ${
+  //                 secondary
+  //                   ? ButtonUtils.styles.secondary
+  //                   : btnBlack
+  //                   ? `${ButtonUtils.styles.blackBtn} ${hoverOpacity}`
+  //                   : ButtonUtils.styles.primary
+  //               }
 
-                ${customWidth}
-                ${bgColor}
+  //               ${
+  //                 (size === "custom" &&
+  //                   ButtonUtils.buttonSizes.customButtonStyle) ||
+  //                 (size === "sm" && ButtonUtils.buttonSizes.smStyle) ||
+  //                 (size === "md" && ButtonUtils.buttonSizes.mdStyle) ||
+  //                 (size === "lg" && ButtonUtils.buttonSizes.lgStyle)
+  //               }
 
-                font-${labelWeight}
-                ${color ? `text-${color}` : ""} // Set text color dynamically
+  //               ${customWidth}
+  //               ${bgColor}
 
-                transition-colors
-                cursor-pointer
+  //               font-${labelWeight}
+  //               ${color ? `text-${color}` : ""} // Set text color dynamically
 
-                ${border}
-                ${borderColor}
+  //               transition-colors
+  //               cursor-pointer
 
-                hover:bg-opacity-80
+  //               ${border}
+  //               ${borderColor}
 
-                ${paddingVertical}
-                ${paddingHorizontal}
+  //               hover:bg-opacity-80
 
-                ${marginVertical}
-                ${marginHorizontal}
+  //               ${paddingVertical}
+  //               ${paddingHorizontal}
 
-                outline-none
-                active:outline-none
-                
-                ${disabled && "disabled:cursor-not-allowed opacity-60"}
-                ${
-                  disabled &&
-                  secondary &&
-                  "disabled:bg-gray-300 disabled:text-gray-500"
-                }
-                
-              
-                ${
-                  hoverEnabled &&
-                  `
-                  ${hoverBgColor} 
-                  ${hoverTextColor ? `text-${hoverTextColor}` : ""}
-                  ${hoverBorderColor}
-                  ${hoverOpacity}`
-                }
-            `,
-  ].join(" ");
+  //               ${marginVertical}
+  //               ${marginHorizontal}
+
+  //               outline-none
+  //               active:outline-none
+
+  //               ${disabled && "disabled:cursor-not-allowed opacity-60"}
+  //               ${
+  //                 disabled &&
+  //                 secondary &&
+  //                 "disabled:bg-gray-300 disabled:text-gray-500"
+  //               }
+
+  //               ${
+  //                 hoverEnabled &&
+  //                 `
+  //                 ${hoverBgColor}
+  //                 ${hoverTextColor ? `text-${hoverTextColor}` : ""}
+  //                 ${hoverBorderColor}
+  //                 ${hoverOpacity}`
+  //               }
+  //           `,
+  // ].join(" ");
 
   return (
     <button
@@ -142,7 +141,7 @@ const Button: FC<IButtonProps> = ({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       type={type}
-      className={styles}
+      className="rounded-3xl text-black bg-cyan-300 text-semibold h-[40px] w-[100px]"
     >
       {Icon && <Icon className="mr-2" />}
       {width! <= 1024 && showShareButton && (

@@ -26,10 +26,10 @@ const PostDetail = () => {
 
   return (
     <main>
-      <Header label="Tweet" showBackArrow />
+      <Header label="Quill" showBackArrow />
       <PostFeed data={postData} />
       <PostForm
-        placeholder="Tweet your reply"
+        placeholder="Quill your reply"
         isComment
         postId={postId as string}
       />
