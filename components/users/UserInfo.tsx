@@ -112,7 +112,7 @@ const UserInfo: FC<IUserInfoProps> = ({ username }) => {
           dangerouslySetInnerHTML={{ __html: bioLink }}
         ></p>
 
-        <div className="items-center flex ">
+        <div className="flex-col md:flex-row md:items-center flex ">
           <div className="text-neutral-500 mt-2 flex items-center gap-2 mr-2">
             <RiCalendar2Line size={18} />
             <p>Joined {createdAt}</p>

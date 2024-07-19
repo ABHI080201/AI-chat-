@@ -75,7 +75,7 @@ const SidebarItem: FC<ISidebarType> = ({
       className="flex items-center flex-row"
       onClick={handleSidebarItemClick}
     >
-      <div className="relative rounded-full h-14 w-14 p-4 flex items-center justify-center cursor-pointer hover:bg-neutral-800 hover:bg-opacity-70 transition lg:hidden">
+      <div className="relative rounded-full h-12 w-12 h-sm-14 w-sm-14 p-4 flex items-center justify-center cursor-pointer hover:bg-neutral-800 hover:bg-opacity-70 transition lg:hidden">
         <RenderIcon />
       </div>
       <div className="relative hidden lg:flex items-center rounded-full cursor-pointer hover:bg-neutral-800 hover:bg-opacity-70 gap-4 p-4">

@@ -132,7 +132,7 @@ const PostFeed: FC<IPostFeedProps> = ({ data }) => {
         <div className="flex items-start gap-4 relative">
           <Avatar username={data.user.username} size="small" />
           <div className="flex flex-col">
-            <div className="flex gap-2 ">
+            <div className="flex flex-col md:flex-row md:gap-2 ">
               <h5
                 className="text-white font-semibold cursor-pointer hover:underline"
                 onClick={goToUser}
@@ -145,11 +145,13 @@ const PostFeed: FC<IPostFeedProps> = ({ data }) => {
               >
                 @{data.user.username}
               </h6>
-              <span className="text-neutral-500">·</span>
-              <span className="text-neutral-500">{createdAt}</span>
+              <span className="hidden md:block text-neutral-500">·</span>
+              <span className="text-neutral-500 hidden md:block">
+                {createdAt}
+              </span>
             </div>
             <p
-              className="text-white"
+              className="text-white text-sm md:text-md"
               dangerouslySetInnerHTML={{ __html: controlLink(data.body) }}
             >
               {}

@@ -25,8 +25,6 @@ const ActionSidebar = () => {
       const selectedUsers = shuffledUsers.slice(0, 3);
       setSuggestedUsers(selectedUsers);
     }
-
-    
   }, [allUsers, currentUser, moreRef]);
 
   if (suggestedUsers.length <= 0 || !currentUser) {
@@ -36,8 +34,6 @@ const ActionSidebar = () => {
   if (router.pathname === "/connect") {
     return null;
   }
-
-
 
   return (
     <div className="p-2  top-1 z-50 h-full">

@@ -13,6 +13,7 @@ const ColorUtils = {
     darkGray: "#333333",
     lightGray: "#999999",
     main: "#1f9bf0",
+    cyan: "#00ffff",
   },
   darken: (color: string, percent: number) => {
     const num = parseInt(color.replace("#", ""), 16),

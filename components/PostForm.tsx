@@ -125,19 +125,19 @@ const PostForm: FC<IPostFormProps> = ({
               <Button
                 label="Log in"
                 onClick={handleLoginClick}
-                size="custom"
-                labelSize="base"
-                labelWeight="semibold"
+                // size="custom"
+                // labelSize="base"
+                // labelWeight="semibold"
               />
             </div>
             <div className="py-2">
               <Button
                 label="Sign up"
                 onClick={handleRegisterClick}
-                size="custom"
-                labelSize="base"
-                secondary
-                labelWeight="semibold"
+                // size="custom"
+                // labelSize="base"
+                // secondary
+                // labelWeight="semibold"
               />
             </div>
           </div>
@@ -187,9 +187,9 @@ const PostForm: FC<IPostFormProps> = ({
                 disabled={loading || !body.trim() || body.length > 100}
                 label="Quill"
                 onClick={handleSubmit}
-                size="custom"
-                labelSize="base"
-                labelWeight="semibold"
+                // size="custom"
+                // labelSize="base"
+                // labelWeight="semibold"
               />
             </div>
           </div>
