@@ -46,9 +46,9 @@ const WhoToFollow = ({ suggestedUsers }: WhoToFollowProps) => {
   const formattedDate = `${year}-${month}-${day}`;
 
   return (
-    <div className="p-2 sticky top-8">
+    <div className="p-2 sticky ml-[-20px] ">
       <div className="">
-        <div className="mt-8 ml-8 bg-custom-lightBlack rounded-2xl text-white w-[21rem]">
+        <div className="mt-8 ml-8 bg-custom-lightBlack rounded-2xl text-white lg:w-[21rem]">
           <h2 className="text-xl text-neutral-100 font-black pt-4 pb-1 px-4">
             Who to follow
           </h2>
@@ -74,13 +74,13 @@ const WhoToFollow = ({ suggestedUsers }: WhoToFollowProps) => {
                       @{user.username}
                     </h5>
                   </div>
-                  <div className="font-medium flex items-end justify-items-end right-0">
+                  <div className="font-medium flex items-end justify-items-end right-0 hidden lg:block">
                     <Button
                       label="Follow"
                       bgColor="white"
                       secondary
-                      size="sm"
-                      labelSize="sm"
+                      // size="sm"
+                      // labelSize="sm"
                     />
                   </div>
                 </div>

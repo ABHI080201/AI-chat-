@@ -201,7 +201,7 @@ const Button: React.FC<ButtonProps> = ({
             hover:opacity-80
             transition
             border-2
-            ${fullWidth ? "w-full" : "w-fit"}
+            ${fullWidth ? "w-fit" : "w-fit"}
             ${secondary ? "bg-white" : "bg-cyan-300"}
             ${secondary ? "text-black" : "text-black"}
             ${secondary ? "border-black" : "border-sky-500"}

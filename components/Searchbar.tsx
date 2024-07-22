@@ -66,21 +66,23 @@ const SearchBar = () => {
           onClick={handleCloseSearchbar}
         />
       )}
-      <div className="relative w-[21rem] h-12 bg-white mt-2 ml-8 rounded-full flex justify-start items-center z-30">
-        <RiSearchLine className="ml-5 text-custom-lightGray" size={18} />
-        <input
-          type="text"
-          placeholder="Search"
-          className="bg-inherit rounded-full w-full pl-3 focus:border-none focus:outline-none text-custom-white"
-          onChange={(e) => {
-            setSearchValue(e.target.value);
-          }}
-          onClick={() => setSearchbarOn(true)}
-          value={searchValue}
-          searchbar-data="searchbar"
-          onKeyDown={handleKeyDown}
-          onKeyUp={handleKeyUp}
-        />
+      <div className="hidden lg:block relative w-[21rem] h-12 bg-white  rounded-full flex justify-start items-center lg:flex z-30">
+        <div className="flex items-center">
+          <RiSearchLine className="ml-2 text-custom-lightGray" size={18} />
+          <input
+            type="text"
+            placeholder="Search"
+            className="bg-inherit rounded-full w-full pl-3 focus:border-none focus:outline-none text-black"
+            onChange={(e) => {
+              setSearchValue(e.target.value);
+            }}
+            onClick={() => setSearchbarOn(true)}
+            value={searchValue}
+            searchbar-data="searchbar"
+            onKeyDown={handleKeyDown}
+            onKeyUp={handleKeyUp}
+          />
+        </div>
         {searchResults.length === 0 && searchbarOn && (
           <div className="absolute top-14 w-full z-10 bg-custom-black">
             <div className="shadow-customSecondary rounded-lg max-h-32 flex content-center items-start">
@@ -100,7 +102,7 @@ const SearchBar = () => {
             }}
           />
         )}
-        <div className="absolute bg-custom-black top-14 w-full z-10">
+        <div className="absolute bg-black top-14 w-full z-10">
           {searchResults.length > 0 && searchbarOn && (
             <div
               className={
