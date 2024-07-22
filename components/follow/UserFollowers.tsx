@@ -57,17 +57,8 @@ const UserFollowers: FC<IFollowersUser> = ({ username }) => {
                 {!isCurrentUser && (
                   <Button
                     label={isFollowing ? "Following" : "Follow"}
-                    btnBlack={isFollowing}
                     secondary={!isFollowing}
-                    labelSize="sm"
-                    labelWeight="semibold"
-                    hoverEnabled={isFollowing}
-                    hoverText={isFollowing ? "Unfollow" : ""}
-                    hoverBgColor="hover:!bg-custom-redHover"
-                    hoverTextColor="hover:!text-custom-red"
-                    hoverBorderColor="hover:!border-custom-redHover"
                     onClick={toggleFollow}
-                    size="sm"
                   />
                 )}
               </div>

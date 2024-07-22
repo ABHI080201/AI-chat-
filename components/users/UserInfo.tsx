@@ -69,34 +69,11 @@ const UserInfo: FC<IUserInfoProps> = ({ username }) => {
     <div className="border-neutral-800 border-b pb-4">
       <div className="p-4 flex justify-end">
         {currentUser?.username === username ? (
-          <Button
-            label="Edit profile"
-            onClick={() => editModal.onOpen()}
-            size="md"
-            labelSize="sm"
-            btnBlack
-            hoverEnabled
-            hoverText="Edit profile"
-            hoverBgColor="hover:bg-custom-white"
-            hoverOpacity="hover:!bg-opacity-10"
-            color="black"
-            labelWeight="semibold"
-          />
+          <Button label="Edit profile" onClick={() => editModal.onOpen()} />
         ) : (
           <Button
             label={isFollowing ? "Following" : "Follow"}
-            btnBlack={isFollowing}
-            secondary={!isFollowing}
-            labelSize="sm"
-            labelWeight="semibold"
-            hoverEnabled={isFollowing}
-            hoverText={isFollowing ? "Unfollow" : ""}
-            hoverBgColor="hover:!bg-custom-redHover "
-            hoverTextColor="hover:!text-custom-red"
-            hoverBorderColor="hover:!border-custom-redHover"
             onClick={toggleFollow}
-            size="md"
-            customWidth="!w-32"
           />
         )}
       </div>

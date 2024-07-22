@@ -54,7 +54,6 @@ const Sidebar = () => {
             onClick={item.onClick}
             key={index}
             alert={item?.alert}
-            className="flex flex-col items-center"
           />
         ))}
       </div>

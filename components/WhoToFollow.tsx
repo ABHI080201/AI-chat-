@@ -77,8 +77,6 @@ const WhoToFollow = ({ suggestedUsers }: WhoToFollowProps) => {
                   <div className="font-medium flex items-end justify-items-end right-0 hidden lg:block">
                     <Button
                       label="Follow"
-                      bgColor="white"
-                      secondary
                       // size="sm"
                       // labelSize="sm"
                     />

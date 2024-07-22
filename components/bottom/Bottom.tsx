@@ -39,25 +39,10 @@ const Bottom = () => {
           </div>
           <div className="flex space-x-3">
             <div className="py-2">
-              <Button
-                label="Log in"
-                size="custom"
-                onClick={handleLoginClick}
-                border="sm"
-                borderColor="white"
-                labelWeight="semibold"
-                labelSize="base"
-              />
+              <Button label="Log in" onClick={handleLoginClick} />
             </div>
             <div className="py-2">
-              <Button
-                label="Sign up"
-                size="custom"
-                onClick={handleRegisterClick}
-                secondary
-                labelSize="base"
-                labelWeight="semibold"
-              />
+              <Button label="Sign up" onClick={handleRegisterClick} />
             </div>
           </div>
         </div>

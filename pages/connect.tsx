@@ -78,13 +78,6 @@ const Connect: FC<IHeaderProps> = ({ showBackArrow = false, username }) => {
               <div className="font-medium flex self-center  items-end justify-items-end right-0">
                 <Button
                   label={isFollowing ? "Following" : "Follow"}
-                  btnBlack={isFollowing}
-                  secondary={!isFollowing}
-                  bgColor="white"
-                  hoverEnabled={isFollowing}
-                  hoverText={isFollowing ? "Unfollow" : ""}
-                  size="sm"
-                  labelSize="sm"
                   onClick={toggleFollow}
                 />
               </div>

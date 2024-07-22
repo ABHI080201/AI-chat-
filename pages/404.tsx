@@ -15,14 +15,7 @@ const Custom404 = () => {
       <p className="text-custom-gray-main">
         Hmm...this page doesn&apos;t exist. Try searching for something else.
       </p>
-      <Button
-        label="Search"
-        size="custom"
-        labelWeight="bold"
-        labelSize="base"
-        marginVertical="mt-4"
-        onClick={onClick}
-      />
+      <Button label="Search" onClick={onClick} />
     </div>
   );
 };
