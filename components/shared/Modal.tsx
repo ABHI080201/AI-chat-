@@ -50,7 +50,7 @@ const Modal: FC<IModalProps> = ({
       }}
     >
       <div className="relative w-full h-full lg:w-[550px] lg:h-auto">
-        <div className="relative flex flex-col w-full h-full bg-black rounded-lg shadow-lg lg:h-auto">
+        <div className="relative flex flex-col w-full h-[1000px] bg-black rounded-lg shadow-lg lg:h-auto">
           <div className="flex items-center justify-between p-8">
             <h5 className="text-3xl font-semibold text-white">{title}</h5>
             <button
